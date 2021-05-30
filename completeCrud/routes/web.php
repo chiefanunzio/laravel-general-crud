@@ -15,3 +15,12 @@ Route::get('formMatch', 'crudController@formFun')
 
 Route::post('addMatch', 'crudController@addMatch')
        ->name('addMatch');   
+
+Route::get('editMatch/{id}', 'crudController@editFun')
+       ->name('editMatch'); 
+       
+Route::post('updateMatch/{id}', 'crudController@uptadeFun')
+       ->name('updateMatch');    
+          
+Route::get('delete/{id}','crudController@deleteMatch')   
+       ->name('delete');  

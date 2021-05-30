@@ -15,12 +15,12 @@
         @endif 
         <li><u>risultato: {{$match->result}}</u></li>
 
-   
+     
         
-    </ul>   
-</div>               
-{{-- <a href="{{route('delete', $match ->id)}}">delete match</a>   
+    </ul>      
+</div>                  
+<a href="{{route('delete', $match ->id)}}">delete match</a>   
     
-<a href="{{route('edit', $match ->id)}}">update match</a>      
-     --}}  
-@endsection    
+<a href="{{route('editMatch', $match ->id)}}">update match</a>            
+      
+@endsection       
