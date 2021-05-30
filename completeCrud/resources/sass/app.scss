@@ -1,9 +1,61 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}   
+    box-sizing: border-box;  
+    margin: 15px;  
+         
+}      
+
+a{   
+    text-decoration: none;
+    color:cornsilk;   
+    padding: 5px 10px;   
+    background-color: rgba(113, 56, 124,0.7);      
+    border-radius: 5px;
+}
 
 body{
     background-color: cornflowerblue;
+    color: cornsilk;   
+       
+    ul{   
+        width: 40vw;   
+        display: flex;   
+        flex-direction: column;      
+        li{
+            display: flex;   
+            align-items: center;   
+            justify-content: space-between;   
+        }   
+    }
+             
+}      
+
+body,header,footer{
+    display: flex;      
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
 }
+   
+input{
+    display: block;  
+    text-align: center; 
+    margin:15px auto;   
+    padding: 5px 10px;   
+    border-radius: 5px;   
+    border-style: none;
+}   
+.match{
+    ul{   
+        display: flex;     
+        align-items: center;   
+    }
+}
+   
+.vs{
+    background-color: rgba(255, 2, 2, 0.489);
+    padding: 5px;   
+    border-radius: 50%;         
+    font-size: 10px;   
+}   

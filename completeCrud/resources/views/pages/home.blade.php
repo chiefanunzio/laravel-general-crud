@@ -4,15 +4,16 @@
 <body>
     
     <h2>MATCHES OF WEEK</h2>
-    <a class="button" href="{{route('formMatch')}}">new match</a>     
-    <div>         
+    <a class="button" href="{{route('formMatch')}}">NEW MATCH</a>     
+               
         
         <ul>
             @foreach ($matches as $match)   
             <li>
-                <h4>{{$match->team1}} --> {{$match->team2}} <a href="{{route('match', $match ->id)}}">risultato match</a></h4>
+                <h4>{{strtoupper($match->team1)}} <span class="vs">VS</span> {{strtoupper($match->team2)}} </h4>
+                <a href="{{route('match', $match ->id)}}">risultato match</a>
             </li>      
-            @endforeach   
-        </ul>                
-</body>   
-@endsection                  
+            @endforeach      
+        </ul>                   
+</body>         
+@endsection                              
